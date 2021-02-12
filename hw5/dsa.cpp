@@ -65,7 +65,7 @@ v = ((pow(g, u1, p) * pow(y, u2, p)) % p) % q
 print("w:", w)
 print("u1:", u1)
 print("u2:", u2)
-print("v: 32")
+print("v:", v)
 
 if v == r:
 	print("signature is valid")
