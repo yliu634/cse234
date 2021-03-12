@@ -206,8 +206,6 @@ if __name__ == '__main__':
     print("\nkey pair of Bob:")
     print(b_private, B_public)
 
-    # Alice part:
-    print("\n\n------------------Alice Part:------------------\n")
     # Alice generate next key pair
     a_n_private, A_n_public = gen_keys()
     print("Next key pair of Alice:")
@@ -256,8 +254,6 @@ if __name__ == '__main__':
     print("\nFinal send message: ")
     print(X_x + ciphertext[-len(msg_assembled):])
 
-    # Bob part:
-    print("\n\n------------------Bob Part:------------------\n")
     # Decryption
     # Extract X and ciphertext
     pub_X_x = int(AWS[0:132], 16)
